@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="店舗一覧ページ">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../nagoyameshi/kyoutu/style.css">
         <!-- Font Awesome -->
         <link href=”https://use.fontawesome.com/releases/v6.0.0/css/all.css” rel=”stylesheet”>
         <script src="https://kit.fontawesome.com/c669828915.js" crossorigin="anonymous"></script>
@@ -14,6 +14,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        
+        <!-- slickの読み込み -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
     </head>
 
     <body>
@@ -30,65 +35,73 @@
         </header>
 
         <main>
-            <!-- 店舗一覧 -->
-            <div id ="main-header">
-            <h1>グッドウィン</h1>
+         <!-- 店舗一覧 -->
+        <div id ="main-header">
+        <h2>グッドウィン</h2>
+        </div>
+
+        <section id="carousel-section">
+            <div class="carousel">
+                <div>
+                  <img class="carouselImg" src="../nagoyameshi/kyoutu/img/shop.jpg">
+                </div>
+                <div>
+                  <img class="carouselImg" src="../nagoyameshi/kyoutu/img/drink.jpg">
+                </div>
+                <div>
+                  <img class="carouselImg" src="../nagoyameshi/kyoutu/img/Inside the store.jpg">
+                </div>
+              </div>
+        </section>
+
+        <section id="information">
+        <h2>基本情報</h2> 
+        
+        <section class="box">
+        <div class="detail-information">
+            <div class="name">
+            <p><span class="frame1">店名</span><span class="frame2">グッドウィン</span></p>
             </div>
-
-            <section id="content">
-                <div class="slider">
-                    <div class="slide" id="slide-1">
-                    <img src="../nagoyameshi/kyoutu/img/shop.jpg" alt="料理のイメージ画像">
-                    </div>
-                    <div class="slide" id="slide-2">
-                    <img src="../shousai/img/Inside the store.jpg" alt="店内のイメージ画像">
-                    </div>
-                    <div class="slide" id="slide-3">
-                    <img src="../shousai/img/drink.jpg" alt="ドリンクのイメージ画像">
-                    </div>
-                </div>
-                <div class="btn">
-                    <ul>
-                        <li><a href="#slide-1"><img src="../shousai/img/shop.jpg" alt="料理のイメージ画像"></a></li>
-                        <li><a href="#slide-2"><img src="../shousai/img/Inside the store.jpg" alt="店内のイメージ画像"></a></li>
-                        <li><a href="#slide-3"><img src="../shousai/img/drink.jpg" alt="ドリンクのイメージ画像"></a></li>
-                    </ul>
-                </div>
-
-                <div class="about">
-                    光る砂すなのだ。けれどもらっしゃしょうの灯あかりトパーズの正面しょうの子が投なげました。
-                    ジョバンニもカムパネルラ、僕ぼくらみだな。そのすきの通りながカムパネルラが出てもも天の川は二つのようなしく両手りょうしているそっちへ来たのです。
-                    けれどもやっぱいは電いな涙なみちをふるえて、少しかしの方たちはしい狐火きつけてしました。
-                    「もう、ときにおい、そうに赤い点々てんてつどうか」という証拠しょうか」と言い。
-                </div>
-
-            <div class="shop">
-                <div class="shop-details">
-                    <div class="name">
-                    <p><span class="frame1">店名</span><span class="frame2">グッドウィン</span></p>
-                    </div>
-                    <div class="category">
-                    <p><span class="frame1">カテゴリ</span><span class="frame2">天ぷら</span></p>
-                    </div>
-                    <div class="opening">
-                    <p><span class="frame1">営業時間</span><span class="frame2">16:00~22:00</span></p>
-                    </div>
-                    <div class="closing-day">
-                    <p><span class="frame1">定休日</span><span class="frame2">なし</span></p>
-                    </div>
-                    <div class="money">
-                    <p><span class="frame1">予算</span><span class="frame2">¥500~¥2,500</span></p>
-                    <div class="address">
-                    <p><span class="frame1">住所</span><span class="frame2">〒8399353　和歌山県 井高市加藤町鈴木9-10-8 コーポ渚105号</span></p>
-                    </div>
-                    </div>
-                </div>
+            <div class="category">
+            <p><span class="frame1">カテゴリ</span><span class="frame2">天ぷら</span></p>
             </div>
+            <div class="opening">
+            <p><span class="frame1">営業時間</span><span class="frame2">16:00~22:00</span></p>
+            </div>
+            <div class="closing-day">
+            <p><span class="frame1">定休日</span><span class="frame2">なし</span></p>
+            </div>
+            <div class="money">
+            <p><span class="frame1">予算</span><span class="frame2">¥1,000~¥2,500</span></p>
+            <div class="address">
+            <p><span class="frame1">住所</span><span class="frame2">〒839-9353　和歌山県 井高市加藤町鈴木9-10-8 コーポ渚105号</span></p>
+            </div>
+            </div>
+        </div>
+
+        <div class="about">
+            光る砂すなのだ。けれどもらっしゃしょうの灯あかりトパーズの正面しょうの子が投なげました。
+            ジョバンニもカムパネルラ、僕らみだな。そのすきの通りながカムパネルラが出てもも天の川は二つのようなしく両手りょうしているそっちへ来たのです。
+            けれどもやっぱいは電いな涙なみちをふるえて、少しかしの方たちはしい狐火きつけてしました。
+            「もう、ときにおい、そうに赤い点々てんてつどうか」という証拠しょうか」と言い。
+        </div>
+        </section>
+
+        </div>
 
             </section>
         </main>
         <footer>
             <span id="copyright">&copy; NAGOYAMESHI All Rights Reserved. </span>
         </footer>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <!-- slickの読み込み -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+         <!-- javascript -->
+        <script src="../nagoyameshi/kyoutu/script.js"></script>
+
     </body>
 </html>

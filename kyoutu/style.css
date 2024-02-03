@@ -1,8 +1,9 @@
-  /* PC、スマホ共通スタイル */
+/*   PC、スマホ共通スタイル */
+
   body {
     margin: 0 auto;
     font-family: 'Noto Sans JP',sans-serif;
-    background-color: #FFFFF2;
+    background-color: #FFFFF6;
   }
   
   p {
@@ -48,6 +49,17 @@
     color: #ffffff;
   }
 
+  /* フッター */
+  footer {
+    width: 100%;
+    background-color: #754F44;
+    text-align: center;
+  }
+
+  #copyright {
+    color: #ffffff;
+  }
+
   /* 店舗一覧 */
   #content {
     width: 100%;
@@ -63,19 +75,19 @@
   #main-header {
     display: flex;
     justify-content: space-between;
+    padding: 0 2rem;
   }
 
   #main-header > h2 {
     font-size: 25px;
     color: #754F44;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
+    border-left: solid 4px #BC917A;
   }
 
   form {
-    padding-right: 1rem;
     display: flex;
     align-items: flex-end;
-    padding-bottom: 1rem;
   }
 
   .search {
@@ -101,10 +113,11 @@
     margin-bottom: 0.6em;
     background-color: #FFFAFA;
     list-style: none;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .10);
   }
 
   .shop:hover {
-    opacity: 0.7;/* 透過率50% */
+    opacity: 0.85;/* 透過率85% */
 	  transition: 0.2s;/* 0.2秒アニメーション */
   }
 
@@ -118,6 +131,7 @@
   .shop h2 {
     border-bottom: 2px solid #A57E49;
     margin: 0.4rem 0;
+    padding-left: 0.2rem;
   }
 
   .shop-img {
@@ -125,13 +139,14 @@
     margin: 0 auto 0.4rem auto;
     width: 95%;
     height: 15em;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .10);
   }
 
-   .shop-details p {
+  .shop-details p {
     margin: 0.15rem 0 0 0.5rem;
     font-size: 14px;
   }
-  .frame1 {
+  .shop-details .frame1 {
     border-radius: 9px;
     background-color: #f6f3ec;
   }
@@ -147,19 +162,28 @@
     margin-right: -9.5px;
   }
 
-  footer {
-    width: 100%;
-    background-color: #754F44;
-    text-align: center;
+  /* 店舗詳細 */
+  #information h2 {
+    padding-left: 3px;
+    border-left: solid 3px #BC917A;
   }
 
-  #copyright {
-    color: #ffffff;
+  .box {
+    display: flex;
+  }
+
+  .detail-information {
+    background-color: #F6F4EC;
+  }
+
+  .about {
+    background-color: #F6F4EC;
   }
 
   /* PC用スタイル */
   @media screen and (min-width: 768px){
-
+ 
+  /* 店舗一覧 */
   header {
     padding: 0.5rem 3rem;
   }
@@ -199,11 +223,48 @@
     height: 23em;
   }
 
+  /* 店舗詳細 */
+  #carousel-section{
+    height: 500px;
+    margin-bottom: 30px;
+  }
+  .carousel {
+    display: inline-block;
+    margin: 0 auto;
+    width: 800px;
+  }
+
+  .carouselImg {
+    width: 800px;
+    height: 500px;
+  }
+
+  #information {
+
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .box {
+    padding: 5px;
+  }
+
+  .detail-information {
+    width: 430px;
+    margin-right: 15px;
+    padding: 10px;
+  }
+
+  .about {
+    width: 350px;
+    padding: 10px;
+  }
+
   }
 
   /* スマートフォン用スタイル */
   @media screen and (max-width: 767px) {
-  
+  /* 店舗一覧 */
   header {
     padding: 0.5rem 1rem;
   }
@@ -217,12 +278,12 @@
   }
   
   .search {
-    width: 10rem;
-    height: 1.8rem;
+    width: 8rem;
+    height: 1.5rem;
   }
 
   .fas {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   main {
@@ -241,5 +302,16 @@
     width:80%;
     height: 23rem;
   }
-  
+
+    /* 店舗詳細 */
+
+  .carousel {
+    width: 500px;
+    margin-left: 20px;
   }
+
+  .carouselImg {
+    width: 500px;
+  }
+  }
+  
